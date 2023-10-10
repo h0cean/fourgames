@@ -1,0 +1,45 @@
+.header_ham_btn {
+  /* cursor: pointer; */
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 300ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.header_ham_rotate.header_ham_active {
+  transform: rotate(45deg);
+}
+.header_ham_line {
+  fill: none;
+  transition:
+    stroke-dasharray 300ms,
+    stroke-dashoffset 300ms;
+  stroke: rgb(241, 245, 249);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+.header_ham_btn .header_ham_top {
+  stroke-dasharray: 40 160;
+}
+.header_ham_btn .header_ham_mid {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 300ms;
+}
+.header_ham_btn .header_ham_bot {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition:
+    transform 300ms,
+    stroke-dashoffset 300ms;
+}
+.header_ham_btn.header_ham_active .header_ham_top {
+  stroke-dashoffset: -64px;
+}
+.header_ham_btn.header_ham_active .header_ham_mid {
+  transform: rotate(90deg);
+}
+.header_ham_btn.header_ham_active .header_ham_bot {
+  stroke-dashoffset: -64px;
+}

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --size-cell: 2.1rem;
+  --size-cell-space: 0.07rem;
+  --size-cell-xo: 3rem;
+  --size-cell-inside: calc(var(--size-cell) - (var(--size-cell-space) * 5));
+  --size-piece: calc(var(--size-cell) - (var(--size-cell-space) * 4));
+  --size-piece-inside: calc(var(--size-piece) - (var(--size-cell-space) * 5));
+  --size-col-hover: calc(100% + var(--size-cell) + (var(--size-cell-space) * 10));
+  --size-top-height: calc(var(--size-cell) + (var(--size-cell-space) * 5));
+  --shadow-piece-inner: 'inset 0 0 5px rgb(0 0 0 / 25%)';
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* @media only screen and (min-width: 480px) {
+  :root {
+    --size-cell: 2.7rem;
+    --size-cell-space: 0.09rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --size-cell: 3.125rem;
+    --size-cell-space: 0.125rem;
+  }
+} */
