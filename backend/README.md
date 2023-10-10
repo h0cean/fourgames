@@ -4,6 +4,9 @@ https://github.com/h0cean/fourgames-detailed
 https://github.com/h0cean/fourgames-detailed
 
 ## Setup 
+in order for this app to work properly and  receive telegram updates for chosen_inline_query you need to set rate of received updates for chosen_inline_query to 100%
+this is because creation of new games depends on receiving this kind of updates
+you also need to active inline mode through botfather
 install node-js+ mongodb  tutorial (https://www.youtube.com/watch?v=Bcg6C0G_tAA)
 In the project directory, run npm install to install the packages and get started. 
 After that you have to set enviroment variable :
